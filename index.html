@@ -8,19 +8,46 @@
 </head>
 <body class="scratchcard">
     <header>
-        <h3>CampaignName</h3>
+        <h3>Campaign Name</h3>
     </header>
     <section id="main">
       <div class="card">
-        <div class="bcard">
-            <h3>congratulations!</h3>
-            <img class="burger" src="./image/1 75.png" alt="">
-            <h1 class="percent">10% <span class="offer">OFF</span></h1>
-            <h4>Fajitha Sandwitch</h4>
-            <p>Save up to 10% on your next purchase.</p>
-            <!-- <button class="now">Redeem now</button> -->
-        </div>
-        <canvas class="canvas" id="js-canvas" width="400" height="400" ></canvas>
+
+<div class="scratch-card">
+  <div class="scratch-card-cover-container">
+    <canvas class="scratch-card-canvas" width="320" height="320"></canvas>
+    <img class="scratch-card-canvas-render hidden" alt="">
+    <div class="scratch-card-cover shine">
+      <svg class="scratch-card-cover-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320"><path d="M72.417 85.633a2 2 0 1 0-3.42-2.075l-3.113 5.129a2 2 0 1 0 3.42 2.075l3.113-5.129zm-8.301 13.679a2 2 0 1 0-3.42-2.075l-3.113 5.129a2 2 0 0 0 3.42 2.075l3.113-5.129zm11.997 1.432a2 2 0 0 1-2.747.672l-5.129-3.113a2 2 0 1 1 2.075-3.42l5.129 3.113a2 2 0 0 1 .672 2.748zm-16.425-7.629a2 2 0 1 0 2.075-3.42l-5.129-3.113a2 2 0 1 0-2.075 3.42l5.129 3.113z"/><path fill-rule="evenodd" d="M262.093 121.254a2 2 0 1 0-3.873-1.001l-1.502 5.809a2 2 0 1 0 3.873 1.001l1.502-5.809zm-4.004 15.491a2 2 0 1 0-3.873-1.001l-1.502 5.809a2 2 0 1 0 3.873 1.001l1.502-5.809zm11.9-2.088a2 2 0 0 1-2.437 1.436l-5.809-1.502a2 2 0 1 1 1.001-3.873l5.809 1.502a2 2 0 0 1 1.436 2.437zm-17.927-2.569a2 2 0 0 0 2.437-1.436 2 2 0 0 0-1.436-2.436l-5.809-1.502a2 2 0 0 0-2.437 1.435 2 2 0 0 0 1.436 2.437l5.809 1.502z"/><path d="M196.858 235.528a2 2 0 0 0-2.437-1.435 2 2 0 0 0-1.435 2.437l1.504 5.809a2 2 0 1 0 3.872-1.003l-1.504-5.808zm4.01 15.489a2 2 0 0 0-2.437-1.435 2 2 0 0 0-1.435 2.437l1.504 5.809a2 2 0 1 0 3.872-1.003l-1.504-5.808zm9.396-7.597a2 2 0 0 1-1.435 2.437l-5.809 1.504a2 2 0 1 1-1.002-3.873l5.808-1.503a2 2 0 0 1 2.438 1.435zm-16.924 6.447a2 2 0 1 0-1.003-3.873l-5.808 1.504a2 2 0 1 0 1.002 3.873l5.809-1.504zm-129.604 20.16a2 2 0 1 0 3.032-2.609l-3.913-4.548a2 2 0 1 0-3.032 2.609l3.913 4.548zm14.42-3.173a2 2 0 0 0-2.609-3.032l-4.548 3.914a2 2 0 0 0 2.609 3.032l4.548-3.914zM66.027 277.29a2 2 0 1 0-2.609-3.032l-4.548 3.913a2 2 0 1 0 2.609 3.032l4.548-3.913zm10.965 5.077a2 2 0 0 1-2.82-.212l-3.913-4.548a2 2 0 0 1 3.032-2.609l3.913 4.548a2 2 0 0 1-.212 2.821z"/><g fill-rule="evenodd"><path d="M138.629 74.686a2 2 0 0 1 1.66 2.29l-.787 4.936c-1.184 7.422-10.292 10.36-15.589 5.028-3.163-3.183-8.602-1.12-8.858 3.36l-.325 5.701a2 2 0 1 1-3.994-.228l.326-5.701c.452-7.935 10.086-11.59 15.688-5.952 2.991 3.01 8.134 1.351 8.802-2.839l.787-4.936a2 2 0 0 1 2.29-1.66zm129.754 151.907c-3.652-2.608-8.668.338-8.169 4.798.836 7.469-7.16 12.727-13.686 8.999l-4.34-2.479a2 2 0 0 1 1.984-3.473l4.34 2.479c3.684 2.104 8.199-.864 7.727-5.081-.884-7.899 8-13.117 14.469-8.498l4.647 3.318a2 2 0 1 1-2.325 3.256l-4.647-3.319zM219.458 34.1a2 2 0 0 1 .733-2.732l4.33-2.497c6.51-3.754 14.528 1.471 13.723 8.943-.481 4.462 4.547 7.387 8.189 4.764l4.633-3.338a2 2 0 0 1 2.338 3.246l-4.633 3.338c-6.45 4.646-15.356-.536-14.504-8.439.455-4.219-4.073-7.169-7.748-5.049l-4.33 2.497a2 2 0 0 1-2.731-.733zM43.604 115.569a2 2 0 0 1-1.242 2.541l-4.727 1.623c-4.013 1.378-4.764 6.729-1.285 9.158 6.517 4.551 4.571 14.669-3.169 16.478l-5.56 1.3a2 2 0 0 1-.91-3.895l5.561-1.3c4.37-1.021 5.468-6.734 1.789-9.303-6.162-4.303-4.832-13.78 2.276-16.221l4.727-1.623a2 2 0 0 1 2.541 1.242zM77.095 219.2a2 2 0 0 1 2.043-1.956l4.997.108c7.514.162 11.664 8.786 7.103 14.76-2.723 3.566.061 8.674 4.535 8.318l5.693-.454a2 2 0 1 1 .317 3.988l-5.692.453c-7.923.631-12.855-8.415-8.031-14.733 2.575-3.372.232-8.241-4.01-8.333l-4.997-.108a2 2 0 0 1-1.956-2.043zm-14.771-64.574l-.78-.855.129 1.15a8 8 0 0 1-4.645 8.177l-1.054.478h0l1.134.233a8 8 0 0 1 6.341 6.945l.129 1.15.572-1.006a8 8 0 0 1 8.565-3.885l1.134.232-.78-.854a8 8 0 0 1-1.048-9.346l.572-1.006-1.054.478a8 8 0 0 1-9.212-1.891zm-8.003 5.308c-3.529 1.6-2.948 6.781.848 7.561l1.134.232a4 4 0 0 1 3.171 3.473l.129 1.15c.432 3.85 5.539 4.899 7.453 1.53l.572-1.007a4 4 0 0 1 4.282-1.942l1.134.233c3.796.779 6.371-3.754 3.758-6.616l-.78-.854a4 4 0 0 1-.524-4.673l.572-1.007c1.914-3.369-1.602-7.219-5.13-5.618l-1.054.478a4 4 0 0 1-4.606-.946l-.78-.854c-2.613-2.862-7.361-.708-6.929 3.143l.129 1.15a4 4 0 0 1-2.323 4.089l-1.054.478zM110.956 46.42l1.794-1.614-2.4.251a8 8 0 0 1-8.142-4.707l-.98-2.205-.503 2.36a8 8 0 0 1-6.993 6.289l-2.4.251 2.089 1.208-1.856 3.209 1.856-3.209a8 8 0 0 1 3.82 8.594l-.503 2.36 1.794-1.614a8 8 0 0 1 9.353-.977l2.089 1.208-.98-2.205a8 8 0 0 1 1.961-9.198zm4.469 1.36c2.881-2.591.764-7.355-3.09-6.952l-2.401.251a4 4 0 0 1-4.071-2.354l-.98-2.205c-1.574-3.541-6.759-2.999-7.567.791l-.503 2.36a4 4 0 0 1-3.496 3.144l-2.4.251c-3.854.403-4.941 5.502-1.586 7.441l2.089 1.208a4 4 0 0 1 1.91 4.297l-.503 2.36c-.808 3.79 3.706 6.399 6.587 3.808l1.794-1.614a4 4 0 0 1 4.677-.489l2.089 1.208c3.355 1.939 7.232-1.547 5.658-5.088l-.981-2.205a4 4 0 0 1 .981-4.599l1.794-1.614zm104.847 31.673l.737-4.207-3.069 2.97a8 8 0 0 1-9.312 1.32l-3.773-2.001 1.877 3.836a8 8 0 0 1-1.623 9.264l-3.068 2.97 4.228-.599a8 8 0 0 1 8.309 4.406l1.876 3.837.737-4.207a8 8 0 0 1 6.758-6.541l4.228-.599-3.773-2.001a8 8 0 0 1-4.132-8.448zm4.677-3.517c.668-3.817-3.938-6.259-6.722-3.564l-3.069 2.97a4 4 0 0 1-4.656.66l-3.773-2.001c-3.423-1.815-7.17 1.811-5.467 5.292l1.877 3.836a4 4 0 0 1-.812 4.632l-3.068 2.97c-2.785 2.695-.494 7.378 3.343 6.835l4.228-.599a4 4 0 0 1 4.155 2.203l1.876 3.836c1.703 3.481 6.865 2.75 7.533-1.067l.737-4.207a4 4 0 0 1 3.379-3.27l4.229-.599c3.836-.544 4.736-5.679 1.312-7.494l-3.773-2.001a4 4 0 0 1-2.066-4.224l.737-4.207zM167.501 279.54l1.588-.913-1.821-.195a8 8 0 0 1-6.976-6.307l-.377-1.793-.748 1.672a8 8 0 0 1-8.155 4.685l-1.821-.195 1.358 1.228a8 8 0 0 1 1.936 9.203l-.748 1.672 1.588-.912a8 8 0 0 1 9.351 1.002l1.359 1.229-.377-1.793a8 8 0 0 1 3.843-8.583zm3.581 2.556c3.36-1.931 2.287-7.033-1.566-7.446l-1.822-.195a4 4 0 0 1-3.487-3.154l-.378-1.792c-.797-3.792-5.981-4.348-7.565-.812l-.748 1.672a4 4 0 0 1-4.077 2.343l-1.822-.195c-3.853-.414-5.983 4.345-3.109 6.944l1.359 1.228a4 4 0 0 1 .968 4.602l-.749 1.672c-1.583 3.536 2.284 7.033 5.644 5.103l1.588-.913a4 4 0 0 1 4.675.501l1.359 1.229c2.874 2.599 7.395.001 6.597-3.79l-.377-1.793a4 4 0 0 1 1.922-4.292l1.588-.912zm123.357-94.108l1.83-.08-1.528-1.011a8 8 0 0 1-3.298-8.807l.489-1.765-1.433 1.141a8 8 0 0 1-9.395.414l-1.528-1.01.642 1.715a8 8 0 0 1-2.509 9.064l-1.433 1.141 1.83-.081c3.462-.153 6.629 1.942 7.845 5.187l.642 1.716.489-1.766a8 8 0 0 1 7.357-5.858zm2.006 3.916c3.872-.171 5.262-5.196 2.03-7.333l-1.528-1.01a4 4 0 0 1-1.649-4.404l.489-1.765c1.034-3.735-3.315-6.61-6.346-4.197l-1.433 1.141a4 4 0 0 1-4.698.208l-1.528-1.011c-3.232-2.137-7.311 1.111-5.952 4.739l.642 1.716a4 4 0 0 1-1.255 4.532l-1.433 1.141c-3.031 2.413-1.203 7.296 2.668 7.125l1.83-.081a4 4 0 0 1 3.923 2.594l.642 1.715c1.359 3.629 6.567 3.399 7.601-.335l.489-1.765a4 4 0 0 1 3.678-2.929l1.83-.081z"/><use href="#B"/><use href="#B" x="103" y="30"/><use href="#B" x="-34" y="189"/><use href="#B" x="64" y="126"/><use href="#B" x="-128" y="-2"/><use href="#B" x="-128" y="161"/><use href="#B" x="71" y="219"/></g><path d="M201.469 137.109H177.45a24.65 24.65 0 0 0 6.167-3.906c1.284-1.141 2.317-2.535 3.037-4.095s1.108-3.25 1.143-4.967a13.98 13.98 0 0 0-.982-5.566 13.96 13.96 0 0 0-3.105-4.722 13.98 13.98 0 0 0-4.722-3.106 13.96 13.96 0 0 0-5.566-.981c-1.717.035-3.408.424-4.968 1.143a12.48 12.48 0 0 0-4.095 3.036c-2.885 3.257-4.702 7.5-5.859 11.568-1.147-4.068-2.964-8.301-5.859-11.568a12.48 12.48 0 0 0-4.095-3.036c-1.56-.719-3.251-1.108-4.968-1.143a13.96 13.96 0 0 0-5.566.981 13.98 13.98 0 0 0-4.722 3.106 13.96 13.96 0 0 0-3.105 4.722 13.98 13.98 0 0 0-.982 5.566c.035 1.717.424 3.408 1.143 4.967s1.753 2.954 3.037 4.095a24.65 24.65 0 0 0 6.167 3.906h-24.019a5.86 5.86 0 0 0-4.143 1.717c-1.099 1.098-1.716 2.589-1.716 4.143v15.625a5.86 5.86 0 0 0 5.859 5.859h1.953v33.203a5.86 5.86 0 0 0 5.86 5.86h70.312a5.86 5.86 0 0 0 5.86-5.86v-33.203h1.953a5.86 5.86 0 0 0 5.859-5.859v-15.625c0-1.554-.617-3.045-1.716-4.143a5.86 5.86 0 0 0-4.143-1.717zm-34.18-20.576a8.6 8.6 0 0 1 6.25-2.861h.298c1.345.001 2.676.272 3.915.797s2.36 1.292 3.297 2.257a10.05 10.05 0 0 1 2.159 3.361c.488 1.253.72 2.592.683 3.936-.022 1.183-.287 2.349-.779 3.424s-1.201 2.038-2.083 2.826c-5.903 5.225-16.147 6.451-20.508 6.734.303-4.326 1.524-14.546 6.768-20.474zm-34.18 7.49c-.037-1.344.195-2.683.683-3.936a10.05 10.05 0 0 1 2.159-3.361c.937-.965 2.058-1.733 3.297-2.257s2.57-.796 3.915-.797h.298a8.6 8.6 0 0 1 6.25 2.861c5.229 5.904 6.45 16.148 6.733 20.508-4.34-.283-14.585-1.509-20.507-6.733-.88-.796-1.585-1.765-2.071-2.847a8.6 8.6 0 0 1-.757-3.438zm-19.531 34.571v-15.625c0-.518.206-1.015.572-1.381a1.95 1.95 0 0 1 1.381-.572h41.016v19.531h-41.016c-.518 0-1.015-.206-1.381-.572s-.572-.863-.572-1.381zm7.813 39.062v-33.203h35.156v35.156h-33.203a1.95 1.95 0 0 1-1.953-1.953zm74.218 0a1.95 1.95 0 0 1-1.953 1.953h-33.203v-35.156h35.156v33.203zm7.813-39.062c0 .518-.206 1.015-.572 1.381s-.863.572-1.381.572h-41.016v-19.531h41.016a1.95 1.95 0 0 1 1.381.572c.366.366.572.863.572 1.381v15.625z"/><defs><path id="B" d="M172 57a4 4 0 1 0 0-8 4 4 0 1 0 0 8zm0 4a8 8 0 1 0 0-16 8 8 0 1 0 0 16z"/></defs></svg>
+    </div>
+  </div>
+  <div class="bcard">
+    <h3>Congratulations!</h3>
+    <img class="burger" src="./image/1 75.png" alt="Error">
+    <h1 class="percent">10% <span class="offer">OFF</span></h1>
+    <h4>Fajitha Sandwitch</h4>
+    <p>Save up to 10% on your next purchase.</p>
+</div>
+</div>
+<img id="customBrush" src="./image/brush.png" alt="Custom Brush" style="display: none;">
+
+<svg width="0" height="0">
+  <filter id="remove-black" color-interpolation-filters="sRGB">
+    <feColorMatrix
+      type="matrix"
+      values="1 0 0 0 0
+              0 1 0 0 0
+              0 0 1 0 0
+              -1 -1 -1 0 1"
+      result="black-pixels"
+    />
+    <feComposite in="SourceGraphic" in2="black-pixels" operator="out" />
+  </filter>
+  <filter id="noise">
+    <feTurbulence baseFrequency="0.5"></feTurbulence>
+  </filter>
+</svg>
+      </div>
       </div>
     </section>
     <div class="redeem">
@@ -33,8 +60,6 @@
                 <li>Aut dicta quia. Ut repellat autem vitae. Cupiditate eaque </li>
                 <li>Corrupti voluptatum eos non adipisci soluta voluptate. Est maxime est.</li>
             </ul>
-        <!-- </div>
-        <div> -->
             <h3>Terms and condition</h3>
             <ul>
                 <li>Aut dicta quia. Ut repellat autem vitae. Cupiditate eaque </li>
@@ -42,178 +67,6 @@
             </ul>
         </div>
     </div>
-
-
-    <script>
-        (function() {
-  
-  'use strict';
-  
-  var isDrawing, lastPoint;
-  var container    = document.getElementById('js-container'),
-      canvas       = document.getElementById('js-canvas'),
-      canvasWidth  = canvas.width,
-      canvasHeight = canvas.height,
-      ctx          = canvas.getContext('2d'),
-      image        = new Image(),
-      brush        = new Image();
-      
-  
-  image.src = './image/Frame 4468.svg';
-  image.onload = function() {
-    ctx.drawImage(image, 0, 0);
-    
-    document.querySelectorAll('.form')[0].style.visibility = 'visible';
-  };
-  brush.src = 'data:image/png;base64,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';
-  
-  canvas.addEventListener('mousedown', handleMouseDown, false);
-  canvas.addEventListener('touchstart', handleMouseDown, false);
-  canvas.addEventListener('mousemove', handleMouseMove, false);
-  canvas.addEventListener('touchmove', handleMouseMove, false);
-  canvas.addEventListener('mouseup', handleMouseUp, false);
-  canvas.addEventListener('touchend', handleMouseUp, false);
-  
-  function distanceBetween(point1, point2) {
-    return Math.sqrt(Math.pow(point2.x - point1.x, 2) + Math.pow(point2.y - point1.y, 2));
-  }
-  
-  function angleBetween(point1, point2) {
-    return Math.atan2( point2.x - point1.x, point2.y - point1.y );
-  }
-  
-  function getFilledInPixels(stride) {
-    if (!stride || stride < 1) { stride = 1; }
-    
-    var pixels   = ctx.getImageData(0, 0, canvasWidth, canvasHeight),
-        pdata    = pixels.data,
-        l        = pdata.length,
-        total    = (l / stride),
-        count    = 0;
-    
-    // Iterate over all pixels
-    for(var i = count = 0; i < l; i += stride) {
-      if (parseInt(pdata[i]) === 0) {
-        count++;
-      }
-    }
-    
-    return Math.round((count / total) * 100);
-  }
-  
-  function getMouse(e, canvas) {
-    var offsetX = 0, offsetY = 0, mx, my;
-
-    if (canvas.offsetParent !== undefined) {
-      do {
-        offsetX += canvas.offsetLeft;
-        offsetY += canvas.offsetTop;
-      } while ((canvas = canvas.offsetParent));
-    }
-
-    mx = (e.pageX || e.touches[0].clientX) - offsetX;
-    my = (e.pageY || e.touches[0].clientY) - offsetY;
-
-    return {x: mx, y: my};
-  }
-  
-  function handlePercentage(filledInPixels) {
-    filledInPixels = filledInPixels || 0;
-    console.log(filledInPixels +'%');
-    if (filledInPixels > 20) {
-      canvas.parentNode.removeChild(canvas);
-    }
-  }
-  
-  function handleMouseDown(e) {
-    isDrawing = true;
-    lastPoint = getMouse(e, canvas);
-  }
-
-  function handleMouseMove(e) {
-    if (!isDrawing) { return; }
-    
-    e.preventDefault();
-
-    var currentPoint = getMouse(e, canvas),
-        dist = distanceBetween(lastPoint, currentPoint),
-        angle = angleBetween(lastPoint, currentPoint),
-        x, y;
-    
-    for (var i = 0; i < dist; i++) {
-      x = lastPoint.x + (Math.sin(angle) * i) - 25;
-      y = lastPoint.y + (Math.cos(angle) * i) - 25;
-      ctx.globalCompositeOperation = 'destination-out';
-      ctx.drawImage(brush, x, y);
-    }
-    
-    lastPoint = currentPoint;
-    handlePercentage(getFilledInPixels(32));
-  }
-
-
-function handlePercentage(filledInPixels) {
-  filledInPixels = filledInPixels || 0;
-  console.log(filledInPixels + '%');
-  if (filledInPixels > 50) {
-    var canvas = document.getElementById('canvas');
-    if (canvas) {
-      canvas.parentNode.removeChild(canvas); 
-    }
-    
-    var bagSection = document.getElementById('bag');
-    if (bagSection) {
-      bagSection.style.display = 'block'; 
-      bagSection.style.display = 'flex'; 
-      bagSection.style.justifyContent = 'center';
-      bagSection.style.alignItems = 'center';
-    }
-
-    var barElement = document.getElementById('bar');
-    if (barElement) {
-    var busElement = document.createElement('a');
-    busElement.id = 'bus';
-    busElement.href = 'scratch_card_barcode.html';
-    busElement.textContent = 'Redeem now';
-    barElement.parentNode.replaceChild(busElement, barElement);
-    }
-    var barElement1 = document.getElementById('bar1');
-    if (barElement1) {
-    barElement1.parentNode.removeChild(barElement1);
-    }
-
-    // var bagElement = document.getElementById('bag')
-    // if (bagElement){
-    // bagElement.parentNode.replaceChild(bagElement);
-    // bagElement.style.display = 'non'
-
-    // }
-  
-
-  }
-}
-
-
-})();
-
-</script>    
-
-<script>
-  window.addEventListener('load', function () {
-      var bagSection = document.getElementById('bag');
-      setTimeout(function () {
-          if (bagSection) {
-              bagSection.style.display = 'block'; 
-              bagSection.style.display = 'flex'; 
-              bagSection.style.justifyContent = 'center';
-              bagSection.style.alignItems = 'center';
-          }
-      }, 300);
-  });
-
-  // Your handlePercentage function here
-</script>
-
-    
+    <script src="./script.js"></script>
 </body>
 </html>
